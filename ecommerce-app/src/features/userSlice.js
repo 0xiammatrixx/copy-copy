@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  users: [],
-  currentUser: null,
+  users: [], // List of all registered users
+  currentUser: null, // The currently logged-in user
 };
 
 const userSlice = createSlice({
@@ -22,4 +22,5 @@ const userSlice = createSlice({
 });
 
 export const { registerUser, setCurrentUser, deleteUser } = userSlice.actions;
+
 export default userSlice.reducer;
